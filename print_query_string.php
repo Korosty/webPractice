@@ -1,3 +1,4 @@
 <?php
-foreach($_GET as $item)
-echo $item;
+    $res = parse_url( $_SERVER['REQUEST_URI'] );
+    echo ( $res['query'] );
+
